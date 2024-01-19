@@ -32,10 +32,10 @@ Aplique estilos básicos à página usando CSS. Experimente:
 
 ### [M1S01] Ex 3 - Adicionando Conteúdo
 
-Dentro da seção principal (<section>), adicione alguns artigos representando projetos
+Dentro da seção principal (section), adicione alguns artigos representando projetos
 fictícios (ou não). Cada artigo deve conter:
 
-● Um título (<h2>).
+● Um título (h2).
 ● Uma breve descrição do projeto.
 ● Uma imagem relacionada ao projeto.
 
