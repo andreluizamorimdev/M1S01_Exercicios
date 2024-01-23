@@ -4,27 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/d64ef9df2c.js" crossorigin="anonymous"></script>
     <title>Portfólio André Luiz</title>
 </head>
 
 <body>
 
-    <header>
-
+    <header id="header">
+        <nav id="navbar">
+            <h1 id="navbar-logo">Logo Site</h1>
+            <ul class="navbar-items">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-
+    <section id="sobre">
+        <div class="container">
+            <div class="conteudo-sobre">
+                <h2>Olá, Sou André Luiz</h2>
+                <h3>Desenvolvedor Fullstack</h3>
+                <p>Desde novo sempre tive bastante interesse pela tecnologia, lembro de passar horas tentando descobrir
+                    como funcionava a criação de servidores de jogos que jogava na adolescência. Primeiro contato com
+                    programação foi com 15 anos a partir do curso Programador de Computador do Senai São José, após o
+                    curso, realizei o ensino médio técnico do próprio Senai São José que já havia feito este primeiro
+                    curso.
+                    Atualmente estou sempre buscando me aprimorar neste processo tive a incrível oportunidade de estar
+                    realizando o curso de Fullstack do LAB365 proporcionado pelo programa Floripa Mais Tec iniciativa
+                    muito importante que visa disponibilizar educação de qualidade desenvolvendo os profissionais do
+                    futuro.</p>
+            </div>
+            <img class="foto" src="./assets/images/foto-perfil.jpg" alt="">
+        </div>
     </section>
 
-    <article>
+    <section id="projetos">
+        <div class="projeto">
+            <h3>Projeto BemLab</h3>
+            <p>Projeto desenvolvido em squad no terceiro módulo do curso Fullstack do Floripa mais tec. Foi desenvolvido
+                utilizando React.js, Styled Components e Node.js para o backend.</p>
+            <p>Foi proposto a equipe o desenvolvimento de um sistema no formato white-label, capaz de ser customizado e
+                comercializado
+                para postos de saúde e clínicas particulares em todo o país.
+            </p>
+            <img class="imagem-projeto" src="./assets/images/projeto.png" alt="">
+        </div>
+        <div class="projeto">
+            <h3>Projeto de Ecommerce frontend</h3>
+            <p>Projeto Frontend de uma página ecommerce, construido com react typescript e styled components para
+                estilização, para carregar os produtos foi utilizado json-server consumindo dados ficticios de um
+                objeto.
+            </p>
+            <img class="imagem-projeto" src="./assets/images/projeto2.png" alt="">
+        </div>
+        <div class="projeto">
+            <h3>Projeto VeggyFood</h3>
+            <p>
+                Projeto de Ecommerce desenvolvido em squads no terceiro módulo do curso de Fullstack do Floripa mais
+                tec.
+                Foi desenvolvido a parte de frontend do projeto utilizando React.js e Styled Components.
+                A parte de backend foi simulada utilizando o json-server para consumir dados ficticios de um objeto.
+            </p>
 
-    </article>
+            <img class="imagem-projeto" src="./assets/images/projeto3.png" alt="">
+        </div>
+    </section>
 
-    <footer>
+    <section id="contato">
+        <h2>Contato</h2>
+        <div class="container">
+            <div class="conteudo-contato">
+                <p>Entre em contato comigo pelo <a href="mailto:andreluizamorim.dev@gmail.com">email</a> ou através das
+                    redes
+                    sociais abaixo:</p>
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/dev_dede_/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/andr%C3%A9-luiz-amorim-de-souza-435679218/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/andreluizamorimdev" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+    <footer class="footer">
+        <p> &copy; Desenvolvido por André Luiz</p>
     </footer>
 
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
