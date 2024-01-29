@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
     <script src="https://kit.fontawesome.com/d64ef9df2c.js" crossorigin="anonymous"></script>
     <title>Portfólio André Luiz</title>
 </head>
@@ -13,11 +14,12 @@
 
     <header id="header">
         <nav id="navbar">
-            <h1 id="navbar-logo">Logo Site</h1>
+            <h1 id="navbar-logo">André Luiz</h1>
             <ul class="navbar-items">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                <li><a onclick="trocarTema()">Mudar Tema</a></li>
             </ul>
         </nav>
     </header>
@@ -94,7 +96,7 @@
             </div>
         </div>
     </section>
-
+    <button onclick="topFunction()" id="botaoTopo"><i class="fa-solid fa-arrow-up"></i></button>
 
     <footer class="footer">
         <p> &copy; Desenvolvido por André Luiz</p>

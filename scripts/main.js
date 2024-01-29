@@ -49,3 +49,38 @@ function smoothScrollTo(endX, endY, duration) {
       window.scroll(newX, newY);
     }, 1000 / 60);
   }
+
+  const projetos = document.querySelectorAll('.projeto');
+
+  projetos.forEach(projeto => {
+    projeto.addEventListener('click', () => {
+        alert(projeto.getElementsByTagName('h3').item(0).innerText);
+    })
+  })
+
+  function trocarTema() {
+    const body = document.body;
+
+    const isDarkTheme = body.classList.contains('dark-theme');
+
+    body.classList.toggle('dark-theme', !isDarkTheme);
+    
+}
+
+let botaoTopo = document.getElementById("botaoTopo");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    botaoTopo.style.display = "block";
+  } else {
+    botaoTopo.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
